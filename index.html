@@ -14,16 +14,26 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#"> Luis Alonso Cardona Monsivais</a>
+      <a class="navbar-brand" href="#">Luis Alonso Cardona Monsivais</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
-          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Proyectos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#proyectos">Todos los Proyectos</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#proyectos">Tecnologías</a></li>
+              <li><a class="dropdown-item" href="#proyectos">Más información</a></li>
+            </ul>
+          </li>
           <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
         </ul>
       </div>
@@ -59,6 +69,7 @@
   <!-- Proyectos -->
   <section id="proyectos" class="bg-light py-5">
     <div class="container">
+       
       <h2 class="mb-4">Proyectos</h2>
       <div class="row g-4">
         <div class="col-12 col-md-6 col-lg-4">
